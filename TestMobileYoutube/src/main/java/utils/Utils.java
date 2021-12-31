@@ -15,9 +15,9 @@ public class Utils {
 	
 	public static void acessarApp()throws MalformedURLException,InterruptedException{
 		
-		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-		desiredCapabilities.setCapability("platformName","Android");
-		desiredCapabilities.setCapability("deviceName","SM J700M");
+	    DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+            desiredCapabilities.setCapability("platformName","Android");
+	    desiredCapabilities.setCapability("deviceName","SM J700M");
 	    desiredCapabilities.setCapability("automationName", "uiautomator2");	
 	    desiredCapabilities.setCapability("appPackage", "com.google.android.youtube");
 	    desiredCapabilities.setCapability("appActivity", "com.google.android.youtube.HomeActivity");
