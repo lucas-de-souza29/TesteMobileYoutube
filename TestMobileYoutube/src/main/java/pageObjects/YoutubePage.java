@@ -15,27 +15,26 @@ public class YoutubePage {
 	}
 	
 	@AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"Pesquisar\"]")
-    private MobileElement btnPesquisar;
+    	private MobileElement btnPesquisar;
 	
-    @AndroidFindBy(id = "com.google.android.youtube:id/search_edit_text")
-    private MobileElement campoPesquisa;
+    	@AndroidFindBy(id = "com.google.android.youtube:id/search_edit_text")
+    	private MobileElement campoPesquisa;
 
-    @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc='Expandir mini player']"
+    	@AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc='Expandir mini player']"
     		+ "/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup")
-    private MobileElement resultado;
+    	private MobileElement resultado;
     
-    //Métodos
-    public void pesquisarAssunto() {	
-    	btnPesquisar.click();
-    }
+    	//MÃ©todos
+    	public void pesquisarAssunto() {	
+    		btnPesquisar.click();
+    	}
     
-    public void informarConteudo(String msg) {
-    	campoPesquisa.sendKeys(msg + "\\n");    	
-    }
+    	public void informarConteudo(String msg) {
+    		campoPesquisa.sendKeys(msg + "\\n");    	
+    	}
     
-    public void resultadoPesquisa() {
-    	System.out.println("Pesquisa realizada com sucesso!");
-    	resultado.click();
-    }
-
+    	public void resultadoPesquisa() {
+    		System.out.println("Pesquisa realizada com sucesso!");
+    		resultado.click();
+    	}
 }
